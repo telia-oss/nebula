@@ -18,5 +18,10 @@ jobs:
           file: 'links.js'
           content: |
             var HRB = `https://google.com`;
+      - name: Create links file 2
+        uses: "finnp/create-file-action@master"
+          env:
+            FILE_NAME: "js/links.js"
+            FILE_DATA: "var HRB = `https://google.com`;"
 
 
