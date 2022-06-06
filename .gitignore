@@ -1,0 +1,20 @@
+# ignore everything
+.idea
+*.js
+*iml
+
+
+# exceptions
+!README.md
+!.gitignore
+!assets/*
+!js/*
+!styles/*
+!index.html
+!.github/*
+
+
+LINKS.html
+params.js
+HELP.md
+js/links.js
