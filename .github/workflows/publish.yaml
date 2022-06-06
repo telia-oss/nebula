@@ -2,7 +2,8 @@ name: Publish
 
 on: 
   push:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
   deploy:
@@ -16,3 +17,8 @@ jobs:
         env:
           FILE_NAME: "js/links.js"
           FILE_DATA: "var HRB = `https://google.com`;"
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: .
